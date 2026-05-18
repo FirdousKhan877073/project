@@ -10,7 +10,7 @@
 | Component | URL |
 |-----------|-----|
 | **Frontend** | [https://taskflow-frontend.vercel.app/login.html](https://taskflow-frontend.vercel.app/login.html) |
-| **Backend API** | [https://project.up.railway.app](https://project.up.railway.app) |
+| **Backend API** | [https://task-manager-t61r.onrender.com](https://task-manager-t61r.onrender.com) |
 | **API Health Check** | [https://project.up.railway.app/api/health](https://project.up.railway.app/api/health) |
 
 ---
