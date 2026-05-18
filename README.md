@@ -12,7 +12,6 @@
 |-----------|-----|
 | **Frontend** | [https://taskflow-frontend-c3gn5zlk6-firdouskhan877073s-projects.vercel.app?_vercel_share=f8FG0hFgCNJGw6JauH1UgPVeLfwghEUP](https://taskflow-frontend-c3gn5zlk6-firdouskhan877073s-projects.vercel.app?_vercel_share=f8FG0hFgCNJGw6JauH1UgPVeLfwghEUPl) |
 | **Backend API** | [https://task-manager-t61r.onrender.com](https://task-manager-t61r.onrender.com) |
-| **API Health Check** | [https://project.up.railway.app/api/health](https://project.up.railway.app/api/health) |
 
 ---
 
