@@ -1,15 +1,16 @@
 # 🚀 TaskFlow Pro - Complete Full-Stack Project Management System
 
-![Status](https://img.shields.io/badge/status-live-success)
-![Frontend](https://taskflow-frontend-c3gn5zlk6-firdouskhan877073s-projects.vercel.app?_vercel_share=f8FG0hFgCNJGw6JauH1UgPVeLfwghEUP)
+![Status](https://img.shields.io/badge/status-live-success-brightgreen)
+![Frontend](https://img.shields.io/badge/frontend-Vercel-blue)
 ![Backend](https://img.shields.io/badge/backend-Railway-orange)
 ![Database](https://img.shields.io/badge/database-MongoDB-green)
+
 
 ## 📌 Live Demo
 
 | Component | URL |
 |-----------|-----|
-| **Frontend** | [https://taskflow-frontend.vercel.app/login.html](https://taskflow-frontend.vercel.app/login.html) |
+| **Frontend** | [https://taskflow-frontend-c3gn5zlk6-firdouskhan877073s-projects.vercel.app?_vercel_share=f8FG0hFgCNJGw6JauH1UgPVeLfwghEUP](https://taskflow-frontend-c3gn5zlk6-firdouskhan877073s-projects.vercel.app?_vercel_share=f8FG0hFgCNJGw6JauH1UgPVeLfwghEUPl) |
 | **Backend API** | [https://task-manager-t61r.onrender.com](https://task-manager-t61r.onrender.com) |
 | **API Health Check** | [https://project.up.railway.app/api/health](https://project.up.railway.app/api/health) |
 
