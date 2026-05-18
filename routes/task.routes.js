@@ -78,12 +78,12 @@ const router = express.Router();
 
 const Task = require("../models/Task");
 const Project = require("../models/Project");
-const { authMiddleware } = require("../middleware/authMiddleware");
+const { authMiddleware } = require("../middleware/authmiddleware");
 
 // ==========================
 // ➕ CREATE TASK (SECURE + VALIDATION)
 // ==========================
-router.post("/", authMiddleware, async (req, res) => {
+router.post("/", authmiddleware, async (req, res) => {
   try {
     const { title, projectId, assignedTo, status } = req.body;
 
@@ -146,7 +146,7 @@ router.post("/", authMiddleware, async (req, res) => {
 // ==========================
 // 📥 GET TASKS (USER BASED)
 // ==========================
-router.get("/", authMiddleware, async (req, res) => {
+router.get("/", authmiddleware, async (req, res) => {
   try {
     const tasks = await Task.find({
       $or: [
@@ -167,7 +167,7 @@ router.get("/", authMiddleware, async (req, res) => {
 // ==========================
 // ❌ DELETE TASK (SECURE)
 // ==========================
-router.delete("/:id", authMiddleware, async (req, res) => {
+router.delete("/:id", authmiddleware, async (req, res) => {
   try {
     const task = await Task.findById(req.params.id);
 

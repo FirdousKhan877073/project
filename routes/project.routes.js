@@ -29,13 +29,13 @@ const express = require("express");
 const router = express.Router();
 
 const Project = require("../models/Project");
-const { authMiddleware, isAdmin } = require("../middleware/authMiddleware");
+const { authMiddleware, isAdmin } = require("../middleware/authmiddleware");
 
 
 // ==========================
 // ➕ CREATE PROJECT
 // ==========================
-router.post("/", authMiddleware, isAdmin, async (req, res) => {
+router.post("/", authmiddleware, isAdmin, async (req, res) => {
   try {
     const project = await Project.create({
       name: req.body.name,
@@ -54,7 +54,7 @@ router.post("/", authMiddleware, isAdmin, async (req, res) => {
 // ==========================
 // 📥 GET USER PROJECTS ONLY
 // ==========================
-router.get("/", authMiddleware, async (req, res) => {
+router.get("/", authmiddleware, async (req, res) => {
   try {
     const projects = await Project.find({
       $or: [
@@ -76,7 +76,7 @@ router.get("/", authMiddleware, async (req, res) => {
 // ==========================
 // ❌ DELETE PROJECT (SECURE)
 // ==========================
-router.delete("/:id", authMiddleware, async (req, res) => {
+router.delete("/:id", authmiddleware, async (req, res) => {
   try {
     const project = await Project.findById(req.params.id);
 
@@ -107,7 +107,7 @@ router.delete("/:id", authMiddleware, async (req, res) => {
 // ==========================
 // 👥 ADD MEMBER
 // ==========================
-router.put("/:id/add-member", authMiddleware, async (req, res) => {
+router.put("/:id/add-member", authmiddleware, async (req, res) => {
   try {
     const { userId } = req.body;
 
@@ -141,7 +141,7 @@ router.put("/:id/add-member", authMiddleware, async (req, res) => {
 // ==========================
 // ❌ REMOVE MEMBER
 // ==========================
-router.put("/:id/remove-member", authMiddleware, async (req, res) => {
+router.put("/:id/remove-member", authmiddleware, async (req, res) => {
   try {
     const { userId } = req.body;
 

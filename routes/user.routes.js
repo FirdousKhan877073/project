@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
-const auth = require("../middleware/authMiddleware");
+const auth = require("../middleware/authmiddleware");
 
 // GET all users (for dropdown)
 router.get("/", auth, async (req, res) => {
