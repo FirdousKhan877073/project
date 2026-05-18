@@ -172,45 +172,78 @@
 - MongoDB Atlas account (or local MongoDB)
 - Git
 
+
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB Atlas account (or local MongoDB)
+- Git
+
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/FirdousKhan877073/taskflow-fullstack.git
 cd taskflow-fullstack
+```
 
 ### Step 2: Install Backend Dependencies
+```bash
 cd backend
 npm install
+```
 
 ### Step 3: Configure Environment Variables
-Create a .env file in the backend folder:
+Create a `.env` file in the `backend` folder:
 
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key_here
+```
 
 ### Step 4: Start the Backend Server
+```bash
 npm start
-# Server runs on http://localhost:5000
+```
+**Server runs on:** `http://localhost:5000`
 
 ### Step 5: Open Frontend
-# Simply open frontend/index.html in your browser
-# Or use Live Server in VS Code
+Simply open `frontend/index.html` in your browser or use Live Server in VS Code
 
 ### Step 6: Access the Application
-Frontend: http://localhost:5500/frontend/index.html
+| Page | URL |
+|------|-----|
+| Frontend | `http://localhost:5500/frontend/index.html` |
+| Backend API | `http://localhost:5000` |
 
-Backend API: http://localhost:5000
+---
 
-### Project Structure
+## 📁 Project Structure
 
+```
 Project/
+│
 ├── frontend/
 │   ├── index.html
 │   └── dashboard.html
+│
 ├── backend/
 │   ├── server.js
 │   ├── config/
+│   │   └── db.js
 │   ├── middleware/
+│   │   └── authmiddleware.js
 │   ├── models/
+│   │   ├── User.js
+│   │   ├── Task.js
+│   │   └── Project.js
 │   └── routes/
+│       ├── auth.routes.js
+│       ├── task.routes.js
+│       └── project.routes.js
+│
+├── package.json
 └── README.md
+```
+
